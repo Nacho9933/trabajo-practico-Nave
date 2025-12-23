@@ -7,6 +7,20 @@
     font-family: 'Inter', sans-serif;
 }
 
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ol, li {
+    list-style: none;
+}
 .header {
     background-color: #fff; 
     box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
@@ -21,16 +35,14 @@
 }
 
 .header__nav {
-    width: 950px;
+    width: 100%;
+    max-width: 950px;
     display: flex;  
     justify-content: space-between;
     align-items: center;
     padding: 16px;
 }
 
-ol, li {
-    list-style: none;
-}
 
 .divider-line {
     width: 1px;
@@ -43,9 +55,24 @@ ol, li {
     align-items: center;
     margin-right: 20px;
 }
-.header__logo-container img {
-    height: 33px;
+
+.bi-list {
+    display: none;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.logo-mobile {
+    display: none;
+    width: 40px;
+    height: auto;
+}
+
+.logo-desktop {
+    display: block;
     width: 127px;
+    height: 33px;
 }
 
 .header__nav-list {
@@ -426,3 +453,82 @@ footer {
     color: #652BDF;
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    
+    .header__nav {
+        padding: 16px 0; 
+        position: relative;
+        justify-content: center; 
+    }
+
+    .header__nav-list {
+        display: none; 
+    }
+
+    .header__nav-buttons {
+        display: none; 
+    }
+
+    .logo-desktop {
+        display: none;
+    }
+
+
+    .bi-list {
+        display: block; 
+        position: absolute;
+        left: 20px;
+    }
+
+    .logo-mobile {
+        display: block;
+    }
+
+    .card__container {
+        flex-direction: column;
+        gap: 24px; 
+    }
+
+    .promo__banner {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+
+    .medios-cobro-cards__container {
+        gap: 60px; 
+    }
+
+
+    .medio-cobro__card {
+        flex-direction: column-reverse;
+        gap: 30px;
+        text-align: center; 
+    }
+
+    .medio-cobro__card.reverse {
+        flex-direction: column-reverse;
+    }
+
+    .footer__container {
+        flex-direction: row;  
+        flex-wrap: wrap;
+        justify-content: center; 
+        gap: 30px;
+    } 
+
+    .footer__column {
+        flex: 0 0 calc(50% - 15px); 
+    }
+
+    .footer__top {
+        text-align: center;
+    }
+
+    .footer__logo {
+        margin: 0 auto;
+    }
+}
+

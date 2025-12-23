@@ -12,16 +12,21 @@
 <body>
     <header class="header">
         <nav class="header__nav">
+            <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
             <a href="/" class="header__logo-container">
-                <img src="https://navenegocios.ar/content/dam/galicia/nave/images/logo/Logo%20Nave.jpg"
-                    alt="Logo de Nave Negocios">
+                <img src="https://navenegocios.ar/content/dam/galicia/nave/images/logo/Logo%20Nave.jpg" alt="Logo Nave"
+                    class="logo-desktop">
+                <img src="https://navenegocios.ar/content/dam/galicia/nave/images/logo/LogoNave-Mobile.jpg"
+                    alt="Logo Nave Móvil" class="logo-mobile">
             </a>
-            <ol class="header__nav-list">
+            <ul class="header__nav-list">
                 <li class="header__nav-item">
                     <span>Medios de cobro</span>
                 </li>
                 <li class="header__nav-item">
-                    <span>Mas soluciones</span>
+                    <span>Más soluciones</span>
                 </li>
                 <li class="header__nav-item">
                     <span>Beneficios</span>
@@ -29,8 +34,8 @@
                 <li class="divider-line">
                     <span></span>
                 </li>
-            </ol>
-            <ol class="header__nav-buttons">
+            </ul>
+            <ul class="header__nav-buttons">
                 <li>
                     <button class="header__nav-button-transparente">
                         <span>Espacio Nave</span>
@@ -41,7 +46,7 @@
                         <span>Entrar a la nave</span>
                     </button>
                 </li>
-            </ol>
+            </ul>
         </nav>
     </header>
     <main>
@@ -172,60 +177,60 @@
                 </div>
             </div>
         </section>
-        <footer>
-            <div class="footer__top">
-                <img src="https://navenegocios.ar/content/dam/galicia/nave/images/logo/LogoNave-Mobile.jpg"
-                    alt="Logo Nave">
-            </div>
-            <div class="footer__container">
-                <div class="footer__column">
-                    <h4 class="footer__title">
-                        Nave
-                    </h4>
-                    <ul class="footer__list">
-                        <li><a href="#">Cobrá con Nave</a></li>
-                        <li><a href="#">Entrar a la nave</a></li>
-                        <li><a href="#">El blog de Nave</a></li>
-                        <li><a href="#">Empezar a cobrar</a></li>
-                        <li><a href="#">Abrir cuenta en Galicia</a></li>
-                        <li><a href="#">Cobranzas integradas</a></li>
-                        <li><a href="#">Desarrolladores de Nave</a></li>
-                        <li><a href="#">Integraciones</a></li>
-                    </ul>
-                </div>
-                <div class="footer__column">
-                    <h4 class="footer__title">
-                        Medios de cobro
-                    </h4>
-                    <ul class="footer__list">
-                        <li><a href="#">Cobra con QR</a></li>
-                        <li><a href="#">Cobrá por tu tienda online</a></li>
-                        <li><a href="#">Cobrá con Link de pago</a></li>
-                        <li><a href="#">Punta Cobrá con Nave</a></li>
-                    </ul>
-                </div>
-                <div class="footer__column">
-                    <h4 class="footer__title">
-                        Beneficios
-                    </h4>
-                    <ul class="footer__list">
-                        <li><a href="#">Promociones</a></li>
-                        <li><a href="#">Mapa de Nave</a></li>
-                    </ul>
-                </div>
-                <div class="footer__column">
-                    <h4 class="footer__title">
-                        Te puede interesar
-                    </h4>
-                    <ul class="footer__list">
-                        <li>
-                            <a href="#">Galicia</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
     </main>
+    <footer>
+        <div class="footer__top">
+            <img src="https://navenegocios.ar/content/dam/galicia/nave/images/logo/LogoNave-Mobile.jpg"
+                alt="Logo Nave">
+        </div>
+        <div class="footer__container">
+            <div class="footer__column">
+                <h4 class="footer__title">
+                    Nave
+                </h4>
+                <ul class="footer__list">
+                    <li><a href="#">Cobrá con Nave</a></li>
+                    <li><a href="#">Entrar a la nave</a></li>
+                    <li><a href="#">El blog de Nave</a></li>
+                    <li><a href="#">Empezar a cobrar</a></li>
+                    <li><a href="#">Abrir cuenta en Galicia</a></li>
+                    <li><a href="#">Cobranzas integradas</a></li>
+                    <li><a href="#">Desarrolladores de Nave</a></li>
+                    <li><a href="#">Integraciones</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__title">
+                    Medios de cobro
+                </h4>
+                <ul class="footer__list">
+                    <li><a href="#">Cobrá con QR</a></li>
+                    <li><a href="#">Cobrá por tu tienda online</a></li>
+                    <li><a href="#">Cobrá con Link de pago</a></li>
+                    <li><a href="#">Punta Cobrá con Nave</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__title">
+                    Beneficios
+                </h4>
+                <ul class="footer__list">
+                    <li><a href="#">Promociones</a></li>
+                    <li><a href="#">Mapa de Nave</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__title">
+                    Te puede interesar
+                </h4>
+                <ul class="footer__list">
+                    <li>
+                        <a href="#">Galicia</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
